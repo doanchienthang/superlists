@@ -87,8 +87,6 @@ class NewVisitorTest(LiveServerTestCase):
         self.assertNotIn('Buy peacock feathers', page_text)
         self.assertIn('Buy milk', page_text)
 
-        self.fail('Finish the test!')
-
         # Satisfied, they both go back to sleep
 
 if __name__ == '__main__':
