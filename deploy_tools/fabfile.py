@@ -43,7 +43,7 @@ def _update_static_files(source_folder):
     ))
 
 def _update_database(source_folder):
-    pass
+    run('cd %s && ../virtualenv/bin/python3 manage.py migrate --noinput')
 
 def deploy():
     site_folder = '/home/%s/sites/%s' % (env.user, env.host)
